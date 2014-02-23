@@ -4,6 +4,8 @@ var dataHeadCategory = '<table id="resultCategory"> <thead> <th>Nome</th> <th>Pe
 var dataCategory = dataHeadCategory;
 var dataFootCategory = '</tbody> </table>';
 
+/* ************************************************** Fazer função pra preencher dados automaticos. */
+
 /* ********************************************************************************************************** */
 /* **************************************************************************************** SALVAR CATEGORIA. */
 function saveCategory() {

@@ -5,7 +5,12 @@
     padding: 0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
 
-    
+/* *************************************************************** Para testes. Deletar quando acabar. */
+/*
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
+*/
 }
 
 /* ********************************************************************************************************** */
@@ -102,7 +107,10 @@
     margin-top: 30%;
 }
 
-#inputSaveCategory, #inputSearchCategory, #outputSaveCategory, #outputSearchCategory {
+#inputSaveCategory, #inputSearchCategory, #inputSaveFighter,
+#inputSearchFighter, #inputSaveFight, #inputSearchFight,
+#outputSaveCategory, #outputSearchCategory, #outputSaveFighter,
+#outputSearchFighter #outputSaveFight, #outputSearchFight {
     width: 85%;
     height: 45%;
 
@@ -115,12 +123,14 @@
     /*background-color: #FFDAB9;*/
 }
 
-#inputSaveCategory, #inputSearchCategory {
+#inputSaveCategory, #inputSearchCategory, #inputSaveFighter,
+#inputSearchFighter, #inputSaveFight, #inputSearchFight {
     margin-top: 1%;
     border-top-right-radius: 8px;
 }
 
-#outputSaveCategory, #outputSearchCategory {
+#outputSaveCategory, #outputSearchCategory, #outputSaveFighter,
+#outputSearchFighter #outputSaveFight, #outputSearchFight {
     margin-top: 1.5%;
     border-bottom-right-radius: 8px;
 }

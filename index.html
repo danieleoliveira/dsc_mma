@@ -7,9 +7,7 @@
         <script type="text/javascript" src="scripts/fighterActions.js"></script>
         <script type="text/javascript" src="scripts/fightActions.js"></script>
         
-        <link rel="stylesheet" type="text/css" href="stylesheets/categoryStyles.css"/>
-        <link rel="stylesheet" type="text/css" href="stylesheets/fighterStyles.css"/>
-        <link rel="stylesheet" type="text/css" href="stylesheets/fightStyles.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheet/styles.css"/>
 
         <meta charset="utf-8"> 
         
@@ -98,10 +96,10 @@
 
             <h2>Bem vindo à página de MMA.</h2>
 
+            <!--- *********************************************** Apagar valor dos forms depois de realizar ações. -->
+
             <!--- ******************************************************************** -->
             <!--- ********************************************************* CATEGORIA. -->
-
-            <!--- *********************************************** Apagar valor do form depois de realizar ação. -->
             <div id="inputSaveCategory">
                 <form name="formSaveCategory">
                     <label>Nome*</label>
@@ -143,9 +141,81 @@
 
             <!--- ****************************************************************** -->
             <!--- ********************************************************* LUTADOR. -->
+            <div id="inputSaveFighter">
+                <form name="formSaveFighter">
+                    <label>Nome*</label>
+                    <input type="text" name="name"/>
+
+                    <label>Peso Mínimo*</label>
+                    <input type="number" name="minimumWeight"/>
+
+                    <label>Peso Máximo*</label>
+                    <input type="number" name="maximumWeight"/>
+
+                    <input type="button" value="Salvar" onClick="saveFighter()"/>
+                    <input type="button" value="Listar" onClick="listFighters()"/>
+                </form>
+            </div>
+
+            <div id="outputSaveFighter"></div>
+
+            <div id="inputSearchFighter">
+                <form name="formSearchFighter">
+                    <label>Nome</label>
+                    <input type="text" name="name"/>
+
+                    <label>Peso Mínimo</label>
+                    <input type="number" name="minimumWeight"/>
+
+                    <label>Peso Máximo</label>
+                    <input type="number" name="maximumWeight"/>
+
+                    <input type="button" value="Buscar" onClick="searchFighter()"/>
+                    <input type="button" value="Editar" onClick="editFighter()"/>
+                    <input type="button" value="Deletar" onClick="deleteFighter()"/>
+                </form>
+            </div>
+
+            <div id="outputSearchFighter"></div>
 
             <!--- *************************************************************** -->
             <!--- ********************************************************* LUTA. -->
+            <div id="inputSaveFight">
+                <form name="formSaveFight">
+                    <label>Nome*</label>
+                    <input type="text" name="name"/>
+
+                    <label>Peso Mínimo*</label>
+                    <input type="number" name="minimumWeight"/>
+
+                    <label>Peso Máximo*</label>
+                    <input type="number" name="maximumWeight"/>
+
+                    <input type="button" value="Salvar" onClick="saveFight()"/>
+                    <input type="button" value="Listar" onClick="listFights()"/>
+                </form>
+            </div>
+
+            <div id="outputSaveFight"></div>
+
+            <div id="inputSearchFight">
+                <form name="formSearchFight">
+                    <label>Nome</label>
+                    <input type="text" name="name"/>
+
+                    <label>Peso Mínimo</label>
+                    <input type="number" name="minimumWeight"/>
+
+                    <label>Peso Máximo</label>
+                    <input type="number" name="maximumWeight"/>
+
+                    <input type="button" value="Buscar" onClick="searchFight()"/>
+                    <input type="button" value="Editar" onClick="editFight()"/>
+                    <input type="button" value="Deletar" onClick="deleteFight()"/>
+                </form>
+            </div>
+
+            <div id="outputSearchFight"></div>
 
         </div>
 

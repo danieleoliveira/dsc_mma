@@ -5,10 +5,20 @@ $(document).ready(function() {
   $('.menuCategoryDropdown').hide();
   $('.menuFighterDropdown').hide();
   $('.menuFightDropdown').hide();
+
   $('#inputSaveCategory').hide();
   $('#inputSearchCategory').hide();
+  $('#inputSaveFighter').hide();
+  $('#inputSearchFighter').hide();
+  $('#inputSaveFight').hide();
+  $('#inputSearchFight').hide();
+
   $('#outputSaveCategory').hide();
   $('#outputSearchCategory').hide();
+  $('#outputSaveFighter').hide();
+  $('#outputSearchFighter').hide();
+  $('#outputSaveFight').hide();
+  $('#outputSearchFight').hide();
   
 /* *************************************************************** Para testes. Deletar quando acabar. */
 /*
