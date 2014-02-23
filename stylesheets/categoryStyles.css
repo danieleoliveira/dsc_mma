@@ -5,11 +5,11 @@
     padding: 0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
 
-    border-width: 1px;
-    border-style: dotted;
-    border-color: black;
+    
 }
 
+/* ********************************************************************************************************** */
+/* ******************************************************************************************* BARRA DE MENU. */
 .header {
     height: 98%;
     width: 30%;
@@ -24,7 +24,7 @@
 .menu {
     height: 33%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.9;
     
     display: inline-block;
 
@@ -39,41 +39,53 @@
 
 #category {
 	border-top-left-radius: 8px;
-    background-color: #FF0000;
+    background-color: #D74F33;
     margin-bottom: 0.5%;
 }
 
-.menuCategoryDropdown {
-    height: 19.3%;
-    width: 100%;
-    opacity: 0.5;
-
-    background-color: #FF6A6A;
-}
-
-.menuCategoryDropdown h5 {
-    margin-right: 7%;
-    padding-top: 3.5%;
-}
-
 #fighter {
-    background-color: #008000;
+    background-color: #C76444;
     margin-bottom: 0.5%;
 }
 
 #fight {
-	border-bottom-left-radius: 8px;
-    background-color: #0000FF;
+    border-bottom-left-radius: 8px;
+    background-color: #B37F56;
     margin-bottom: 0.5%;
 }
 
+.menuCategoryDropdown, .menuFighterDropdown, .menuFightDropdown {
+    height: 19.3%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.menuCategoryDropdown h5, .menuFighterDropdown h5, .menuFightDropdown h5 {
+    margin-right: 7%;
+    padding-top: 3.5%;
+}
+
+.menuCategoryDropdown {
+    background-color: #D96651;
+}
+
+.menuFighterDropdown {
+    background-color: #CA765D;
+}
+
+.menuFightDropdown {
+    background-color: #B98C6B;
+}
+
+/* ********************************************************************************************************** */
+/* ************************************************************************************************ CONTEÚDO. */
 #content {
 	height: 97.5%;
-    width: 68%;
+    width: 68.8%;
 
     margin-top: 0.6%;
     margin-right: 0.6%;
-    margin-left: 31.3%;
+    margin-left: 30.8%;
 
     display: inline-block;
     clear: left;
@@ -81,7 +93,8 @@
     border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
 
-	background-color: #EED8AE;
+    opacity: 0.9;
+	background-color: #9C9B79;
     text-align: center;
 }
 
@@ -99,7 +112,7 @@
     border-width: 1px;
     border-style: dashed;
     
-    background-color: #FFDAB9;
+    /*background-color: #FFDAB9;*/
 }
 
 #inputSaveCategory, #inputSearchCategory {
@@ -124,11 +137,11 @@ form label, form input {
     margin-top: 2%;
 }
 
-form label {
-    margin-right: 15%;
+form input {
+    background-color: #B98C6B;
 }
 
-form input {
-    height: 30%;
+#inputSaveCategory form input:nth-child(4), #inputSaveCategory form input:nth-child(5) {
+    
 }
 

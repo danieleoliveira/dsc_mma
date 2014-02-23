@@ -4,6 +4,8 @@ var dataHeadCategory = '<table id="resultCategory"> <thead> <th>Nome</th> <th>Pe
 var dataCategory = dataHeadCategory;
 var dataFootCategory = '</tbody> </table>';
 
+/* ********************************************************************************************************** */
+/* **************************************************************************************** SALVAR CATEGORIA. */
 function saveCategory() {
 
     var category = {};
@@ -12,7 +14,7 @@ function saveCategory() {
     category.minimumWeight = document.formSaveCategory.minimumWeight.value;
     category.maximumWeight = document.formSaveCategory.maximumWeight.value;
 
-    /* ****************************************************************************** Verificar se cadastro novo já existe. */
+    /* ******************************************************************** Verificar se cadastro novo já existe. */
     if(category.name === '') {
         alert("Digite o nome da categoria.");
         return;
@@ -34,6 +36,8 @@ function saveCategory() {
 
 }
 
+/* ********************************************************************************************************** */
+/* **************************************************************************************** LISTAR CATEGORIA. */
 function listCategories() {
 
     if(categories.length === 0) {
@@ -53,6 +57,8 @@ function listCategories() {
 
 }
 
+/* ********************************************************************************************************** */
+/* **************************************************************************************** BUSCAR CATEGORIA. */
 function searchCategory() {
 
     if(categories.length === 0) {
@@ -107,7 +113,10 @@ function searchCategory() {
 
 }
 
-/* ********************************************************************************************** Fazer o edit. */
+/* ********************************************************************************************************** */
+/* **************************************************************************************** EDITAR CATEGORIA. */
+
+/* ********************************************************************************************* Fazer o edit. */
 function editCategory() {
 
     var oldCategory = searchCategory();
@@ -115,6 +124,9 @@ function editCategory() {
     
 
 }
+
+/* *********************************************************************************************************** */
+/* **************************************************************************************** DELETAR CATEGORIA. */
 
 /* ******************************************************************************************** Fazer o delete. */
 function deleteCategory() {
