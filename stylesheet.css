@@ -1,84 +1,134 @@
 * {
 	font-family: Verdana, Tahoma, Sans-Serif;
+    color: #FFFFFF;
+
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
 }
 
 .header {
-    height: 30%;
-    width: 100%;
+    height: 98%;
+    width: 30%;
 
-    display: block;
+    margin-left: 0.6%;
+    margin-top: 0.6%;
+
+    position: fixed;
+    clear: right;
 }
 
 .menu {
-    height: 100%;
-    width: 33%;
+    height: 33%;
+    width: 100%;
     opacity: 0.5;
     
     display: inline-block;
-    position: relative;
 
     text-align: right;
-    color: #FFFFFF;
 }
 
-.menu h3 {
-    margin-top: 150px;
-    margin-right: 30px;
+.menu h2 {
+    margin-top: 41%;
+    margin-right: 7%;
+    margin-bottom: 3%;
 }
 
 #category {
-	border-bottom-left-radius: 8px;
 	border-top-left-radius: 8px;
     background-color: #FF0000;
+    margin-bottom: 0.5%;
 }
 
-/* ****************************************************************************** Descobrir problema com o menu dropdown. */
 .menuCategoryDropdown {
-    height: 20%;
+    height: 19.3%;
     width: 100%;
     opacity: 0.5;
-    margin-top: 0;
-    
-    background-color: #FF6A6A;
 
-    text-align: right;
-    color: #FFFFFF;
+    background-color: #FF6A6A;
 }
 
 .menuCategoryDropdown h5 {
-    margin-top: 10px;
-    margin-right: 30px;    
-    margin-bottom: -20px;
-
-    position: absolute;
-}
-
-#deleteCategoryDropdown {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    margin-right: 7%;
+    padding-top: 3.5%;
 }
 
 #fighter {
     background-color: #008000;
+    margin-bottom: 0.5%;
 }
 
 #fight {
-	border-bottom-right-radius: 8px;
-	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px;
     background-color: #0000FF;
+    margin-bottom: 0.5%;
 }
 
 #content {
-	height: 67%;
-    width: 100%;
-	background-color: #FFC0CB;
-	border-radius: 5px;
+	height: 97.5%;
+    width: 68%;
 
-    clear: both;
-	margin-top: 10px;	
+    margin-top: 0.6%;
+    margin-right: 0.6%;
+    margin-left: 31.3%;
+
+    display: inline-block;
+    clear: left;
+
+    border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+
+	background-color: #EED8AE;
+    text-align: center;
 }
 
-#content h3 {
-    text-align: center;
+#content h2 {
+    margin-top: 30%;
+}
+
+#inputSaveCategory, #inputSearchCategory, #outputSaveCategory, #outputSearchCategory {
+    width: 85%;
+    height: 45%;
+
+    margin-left: 7.5%;
+
+    border-color: #FFFFFF;
+    border-width: 1px;
+    border-style: dashed;
+    
+    background-color: #FFDAB9;
+}
+
+#inputSaveCategory, #inputSearchCategory {
+    margin-top: 1%;
+    border-top-right-radius: 8px;
+}
+
+#outputSaveCategory, #outputSearchCategory {
+    margin-top: 1.5%;
+    border-bottom-right-radius: 8px;
+}
+
+/* ****************************************************************************** Melhorar os contents. */
+form {
+    height: 80%;
+
+    margin-top: 4%;
+}
+
+form label, form input {
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+form label {
+    margin-right: 15%;
+}
+
+form input {
+    height: 30%;
 }
 

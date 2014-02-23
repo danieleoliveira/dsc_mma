@@ -3,6 +3,8 @@ $(document).ready(function() {
   $('.menuCategoryDropdown').hide();
   $('#inputSaveCategory').hide();
   $('#inputSearchCategory').hide();
+  $('#outputSaveCategory').hide();
+  $('#outputSearchCategory').hide();
   
 /* ****************************************************************************** Para testes. Deletar quando acabar. */
 /*
@@ -30,17 +32,18 @@ $(document).ready(function() {
     $(this).fadeTo('fast', 0.5);
   });
 
-  /* ****************************************************************************** Descobrir porque o menu inteiro se move. */
   $('#category').mouseenter(function(){
+    $('#category h2').css('margin-top', '2%');
     $('.menuCategoryDropdown').slideToggle();
   });
 
   $('#category').mouseleave(function(){
-    $('.menuCategoryDropdown').slideToggle();
+    $('.menuCategoryDropdown').slideToggle('fast');
+    $('#category h2').css('margin-top', '41%');
   });
 
   $('.menu').click(function() {
-    $('#content h3').hide();
+    $('#content h2').hide();
   });
 
   /* ****************************************************************************** Melhorar as combinações. Garantir que nada fica escondido. */
@@ -50,7 +53,7 @@ $(document).ready(function() {
 
     $('#inputSaveCategory').show();
     $('#outputSaveCategory').show();
-  });
+  }); 
 
   $('#searchCategoryDropdown').click(function() {
     $('#inputSaveCategory').hide();
@@ -60,12 +63,38 @@ $(document).ready(function() {
     $('#outputSearchCategory').show();
   });
 
+  $('#editCategoryDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#outputSaveCategory').hide();
+
+    $('#inputSearchCategory').show();
+    $('#outputSearchCategory').show();
+  });
+
+  $('#deletCategoryDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#outputSaveCategory').hide();
+
+    $('#inputSearchCategory').show();
+    $('#outputSearchCategory').show();
+  });
+
+  $(document).ready(function(){
+    var $target = $('#resultCategory thead th th th tbody tr');
+    $target.selectable();
+  });
+
+  $('input').focus(function(){
+    $(this).css('outline-color', '#FF0000');
+  });
+
+/* ****************************************************************************** Para testes. Deletar quando acabar. */
 /*
   $(document).ready(function() {
     $('.menu').accordion();
   });
 
-  $('.menu').mouseenter(function() {
+  $('.menu').dblclick(function() {
     $(this).animate({
       width: '-=10px'
     });
@@ -77,10 +106,6 @@ $(document).ready(function() {
     }); 
   });
 
-  $('.menu').click(function() {
-    $(this).toggle(1000);
-  });
-
   //REMEMBER
   $(document).ready(function() {
     var $target = $('div ul li ol li:nth-child(4)');
@@ -88,7 +113,12 @@ $(document).ready(function() {
 
     $(document).ready(function(){
     $('ol').selectable();
-})
+  });
+
+  $('div').hover(function(){
+    $(this).addClass('red');
+  });
+
 });
 */
 

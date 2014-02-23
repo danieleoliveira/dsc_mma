@@ -1,6 +1,6 @@
 var categories = [];
 
-var dataHeadCategory = '<table> <thead> <th>Nome</th> <th>Peso Mínimo</th> <th>Peso Máximo</th> </thead> <tbody>';
+var dataHeadCategory = '<table id="resultCategory"> <thead> <th>Nome</th> <th>Peso Mínimo</th> <th>Peso Máximo</th> </thead> <tbody>';
 var dataCategory = dataHeadCategory;
 var dataFootCategory = '</tbody> </table>';
 
@@ -107,36 +107,25 @@ function searchCategory() {
 
 }
 
+/* ********************************************************************************************** Fazer o edit. */
 function editCategory() {
 
-    var name = document.formSaveCategory.name.value;
-    var minimumWeight = document.formSaveCategory.minimumWeight.value;
-    var maximumWeight = document.formSaveCategory.maximumWeight.value;
+    var oldCategory = searchCategory();
 
-    var data = '<table> <thead> <th></th> <th></th> <th></th> </thead> <tbody> <tr> <td>' + name +
-      		   '</td> <td>' + minimumWeight + '</td> <td>' + maximumWeight + '</td> </tr> </tbody> </table>';
     
-    document.getElementById("outputSaveCategory").innerHTML += data;
 
 }
 
+/* ******************************************************************************************** Fazer o delete. */
 function deleteCategory() {
 
-    var opt = confirm("Tem certeza que quer deletar categoria selecionada?");
+    var oldCategory = searchCategory();
+
+    var opt = confirm("Tem certeza que quer deletar a categoria selecionada?");
     
     if(opt) {
-        var name = document.formSaveCategory.name.value;
-        var minimumWeight = document.formSaveCategory.minimumWeight.value;
-        var maximumWeight = document.formSaveCategory.maximumWeight.value;
-
-        var data = '<table> <thead> <th></th> <th></th> <th></th> </thead> <tbody> <tr> <td>' + name +
-                   '</td> <td>' + minimumWeight + '</td> <td>' + maximumWeight + '</td> </tr> </tbody> </table>';
-    
-        document.getElementById("outputSaveCategory").innerHTML += data;
-
-        categories.delete(category);
+        categories.delete(oldCategory);
         alert("Deletado com sucesso.");
-
     }
 
 }
