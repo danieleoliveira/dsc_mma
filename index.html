@@ -15,6 +15,10 @@
         <meta name="description" content="Operações CRUD MMA">
 
         <meta name="author" content="daniele.casado">
+
+        <!--- ************** luta (lugar, data, lutador1, lutador2) ************** -->
+        <!--- ****** lutador (nome, idade, peso, altura, lutas, categoria1) ****** -->
+        <!--- ********** categoria (nome, pesomax, pesomin, lutadores) *********** -->
     </head>
     
     <body>
@@ -104,13 +108,16 @@
                 <form name="formSaveCategory">
                     <label>Nome*</label>
                     <input type="text" name="name"/>
+                    <br/>
 
                     <label>Peso Mínimo*</label>
                     <input type="number" name="minimumWeight"/>
+                    <br/>
 
                     <label>Peso Máximo*</label>
                     <input type="number" name="maximumWeight"/>
-
+                    <br/>
+                    
                     <input type="button" value="Salvar" onClick="saveCategory()"/>
                     <input type="button" value="Listar" onClick="listCategories()"/>
                 </form>
@@ -122,13 +129,16 @@
                 <form name="formSearchCategory">
                     <label>Nome</label>
                     <input type="text" name="name"/>
-
+                    <br/>
+                    
                     <label>Peso Mínimo</label>
                     <input type="number" name="minimumWeight"/>
-
+                    <br/>
+                    
                     <label>Peso Máximo</label>
                     <input type="number" name="maximumWeight"/>
-
+                    <br/>
+                    
                     <input type="button" value="Buscar" onClick="searchCategory()"/>
                     <input type="button" value="Editar" onClick="editCategory()"/>
                     <input type="button" value="Deletar" onClick="deleteCategory()"/>
@@ -145,13 +155,16 @@
                 <form name="formSaveFighter">
                     <label>Nome*</label>
                     <input type="text" name="name"/>
-
+                    <br/>
+                    
                     <label>Peso Mínimo*</label>
                     <input type="number" name="minimumWeight"/>
-
+                    <br/>
+                    
                     <label>Peso Máximo*</label>
                     <input type="number" name="maximumWeight"/>
-
+                    <br/>
+                    
                     <input type="button" value="Salvar" onClick="saveFighter()"/>
                     <input type="button" value="Listar" onClick="listFighters()"/>
                 </form>
@@ -163,13 +176,16 @@
                 <form name="formSearchFighter">
                     <label>Nome</label>
                     <input type="text" name="name"/>
-
+                    <br/>
+                    
                     <label>Peso Mínimo</label>
                     <input type="number" name="minimumWeight"/>
-
+                    <br/>
+                    
                     <label>Peso Máximo</label>
                     <input type="number" name="maximumWeight"/>
-
+                    <br/>
+                    
                     <input type="button" value="Buscar" onClick="searchFighter()"/>
                     <input type="button" value="Editar" onClick="editFighter()"/>
                     <input type="button" value="Deletar" onClick="deleteFighter()"/>
@@ -184,16 +200,20 @@
                 <form name="formSaveFight">
                     <label>Lugar*</label>
                     <input type="text" name="place"/>
-
+                    <br/>
+                    
                     <label>Categoria*</label>
                     <input type="number" name="category"/>
-
+                    <br/>
+                    
                     <label>Lutador*</label>
                     <input type="number" name="fighter1"/>
-
+                    <br/>
+                    
                     <label>Lutador*</label>
                     <input type="number" name="fighter2"/>
-
+                    <br/>
+                    
                     <input type="button" value="Salvar" onClick="saveFight()"/>
                     <input type="button" value="Listar" onClick="listFights()"/>
                 </form>
@@ -205,16 +225,20 @@
                 <form name="formSearchFight">
                     <label>Lugar</label>
                     <input type="text" name="place"/>
-
+                    <br/>
+                    
                     <label>Categoria</label>
                     <input type="number" name="category"/>
-
+                    <br/>
+                    
                     <label>Lutador</label>
                     <input type="number" name="fighter1"/>
-
+                    <br/>
+                    
                     <label>Lutador</label>
                     <input type="number" name="fighter2"/>
-
+                    <br/>
+                    
                     <input type="button" value="Buscar" onClick="searchFight()"/>
                     <input type="button" value="Editar" onClick="editFight()"/>
                     <input type="button" value="Deletar" onClick="deleteFight()"/>

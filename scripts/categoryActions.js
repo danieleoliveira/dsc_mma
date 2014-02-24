@@ -16,7 +16,7 @@ function saveCategory() {
     category.minimumWeight = document.formSaveCategory.minimumWeight.value;
     category.maximumWeight = document.formSaveCategory.maximumWeight.value;
 
-    /* ******************************************************************** Verificar se cadastro novo já existe. */
+    /* **************************************************************** Verificar se campos do cadastro novo já existem. */
     if(category.name === '') {
         alert("Digite o nome da categoria.");
         return;
