@@ -104,9 +104,19 @@ $(document).ready(function() {
     $('#content h2').hide();
   });
 
+  /* ********************************************************************************************************** */
+  /* *********************************************************************************************** CATEGORIA. */
   $('#addCategoryDropdown').click(function() {
     $('#inputSearchCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSearchFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#inputSearchFight').hide();
     $('#outputSearchCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSearchFighter').hide();
+    $('#outputSaveFight').hide();
+    $('#outputSearchFight').hide();
 
     $('#inputSaveCategory').show();
     $('#outputSaveCategory').show();
@@ -114,7 +124,15 @@ $(document).ready(function() {
 
   $('#searchCategoryDropdown').click(function() {
     $('#inputSaveCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSearchFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#inputSearchFight').hide();
     $('#outputSaveCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSearchFighter').hide();
+    $('#outputSaveFight').hide();
+    $('#outputSearchFight').hide();
 
     $('#inputSearchCategory').show();
     $('#outputSearchCategory').show();
@@ -122,18 +140,166 @@ $(document).ready(function() {
 
   $('#editCategoryDropdown').click(function() {
     $('#inputSaveCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSearchFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#inputSearchFight').hide();
     $('#outputSaveCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSearchFighter').hide();
+    $('#outputSaveFight').hide();
+    $('#outputSearchFight').hide();
 
     $('#inputSearchCategory').show();
     $('#outputSearchCategory').show();
   });
 
-  $('#deletCategoryDropdown').click(function() {
+  $('#deleteCategoryDropdown').click(function() {
     $('#inputSaveCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSearchFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#inputSearchFight').hide();
     $('#outputSaveCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSearchFighter').hide();
+    $('#outputSaveFight').hide();
+    $('#outputSearchFight').hide();
 
     $('#inputSearchCategory').show();
     $('#outputSearchCategory').show();
+  });
+
+  /* ********************************************************************************************************** */
+  /* ************************************************************************************************* LUTADOR. */
+  $('#addFighterDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#inputSearchCategory').hide();
+    $('#inputSearchFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#inputSearchFight').hide();
+    $('#outputSaveCategory').hide();
+    $('#outputSearchCategory').hide();
+    $('#outputSearchFighter').hide();
+    $('#outputSaveFight').hide();
+    $('#outputSearchFight').hide();
+
+    $('#inputSaveFighter').show();
+    $('#outputSaveFighter').show();
+  }); 
+
+  $('#searchFighterDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#inputSearchCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#inputSearchFight').hide();
+    $('#outputSaveCategory').hide();
+    $('#outputSearchCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSaveFight').hide();
+    $('#outputSearchFight').hide();
+
+    $('#inputSearchFighter').show();
+    $('#outputSearchFighter').show();
+  });
+
+  $('#editFighterDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#inputSearchCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#inputSearchFight').hide();
+    $('#outputSaveCategory').hide();
+    $('#outputSearchCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSaveFight').hide();
+    $('#outputSearchFight').hide();
+
+    $('#inputSearchFighter').show();
+    $('#outputSearchFighter').show();
+  });
+
+  $('#deleteFighterDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#inputSearchCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#inputSearchFight').hide();
+    $('#outputSaveCategory').hide();
+    $('#outputSearchCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSaveFight').hide();
+    $('#outputSearchFight').hide();
+
+    $('#inputSearchFighter').show();
+    $('#outputSearchFighter').show();
+  });
+
+  /* ********************************************************************************************************** */
+  /* **************************************************************************************************** LUTA. */
+  $('#addFightDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#inputSearchCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSearchFighter').hide();
+    $('#inputSearchFight').hide();
+    $('#outputSaveCategory').hide();
+    $('#outputSearchCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSearchFighter').hide();
+    $('#outputSearchFight').hide();
+
+    $('#inputSaveFight').show();
+    $('#outputSaveFight').show();
+  }); 
+
+  $('#searchFightDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#inputSearchCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSearchFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#outputSaveCategory').hide();
+    $('#outputSearchCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSearchFighter').hide();
+    $('#outputSaveFight').hide();
+
+    $('#inputSearchFight').show();
+    $('#outputSearchFight').show();
+  });
+
+  $('#editFightDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#inputSearchCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSearchFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#outputSaveCategory').hide();
+    $('#outputSearchCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSearchFighter').hide();
+    $('#outputSaveFight').hide();
+
+    $('#inputSearchFight').show();
+    $('#outputSearchFight').show();
+  });
+
+  $('#deleteFightDropdown').click(function() {
+    $('#inputSaveCategory').hide();
+    $('#inputSearchCategory').hide();
+    $('#inputSaveFighter').hide();
+    $('#inputSearchFighter').hide();
+    $('#inputSaveFight').hide();
+    $('#outputSaveCategory').hide();
+    $('#outputSearchCategory').hide();
+    $('#outputSaveFighter').hide();
+    $('#outputSearchFighter').hide();
+    $('#outputSaveFight').hide();
+
+    $('#inputSearchFight').show();
+    $('#outputSearchFight').show();
   });
 
   /* ********************************************************************************************************** */
